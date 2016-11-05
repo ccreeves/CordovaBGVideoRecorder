@@ -33,8 +33,8 @@
 
     //make the view
     CGRect viewRect = CGRectMake(
-                                 1,
-                                 1,
+                                 0,
+                                 0,
                                  self.webView.superview.frame.size.width,
                                  self.webView.superview.frame.size.height
                                  );
@@ -51,7 +51,7 @@
 
     //Capture session
     session = [[AVCaptureSession alloc] init];
-    [session setSessionPreset:AVCaptureSessionPresetLow];
+    [session setSessionPreset:AVCaptureSessionPresetHigh];
 
     //Get the front camera and set the capture device
     AVCaptureDevice *inputDevice = [self getCamera: self.camera];
