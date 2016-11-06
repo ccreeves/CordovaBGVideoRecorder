@@ -86,7 +86,7 @@
 
     //preview view
     self.previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:session];
-    [self.previewLayer setVideoGravity:AVLayerVideoGravityResizeAspectFill];
+    [self.previewLayer setVideoGravity:AVLayerVideoGravityResizeAspect];
 
     CALayer *rootLayer = [[self view] layer];
     [rootLayer setMasksToBounds:YES];
